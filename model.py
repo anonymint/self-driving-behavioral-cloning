@@ -15,6 +15,9 @@ def load_data(data_locations):
     """
     Load data from array of data_lications then correct the path to images before saving and return
 
+    Features: Center Camera only
+    Labels: Steering angle
+
     :param data_locations:
     :return:
     """
@@ -37,6 +40,9 @@ def load_data_normalize(data_locations):
 
     0.0 steering angle to overcome bias going straight
     -1.0 and 1.0 steeting angle so we don't have outlier data at far end
+
+    Features: Center Camera only
+    Labels: Steering angle
 
     :param data_locations:
     :return:
@@ -90,6 +96,9 @@ def visualize_histogram(lines, bucket_size = 10):
 def get_data(data_root_loc):
     """
     Load all data in memory
+
+    Features: Center Camera only
+    Labels: Steering angle
 
     :param data_root_loc: array of input data location
     :return:
